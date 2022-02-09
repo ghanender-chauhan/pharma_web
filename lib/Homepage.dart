@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:webapp_cytoclick/widgets/data.dart';
 import 'package:webapp_cytoclick/widgets/dropdown.dart';
 import 'package:webapp_cytoclick/widgets/size_config.dart';
 import 'package:webapp_cytoclick/widgets/components.dart';
 import 'package:webapp_cytoclick/widgets/top_bar_container.dart';
+
+import 'widgets/mydropdown.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -41,10 +44,10 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Container(
           // color: Colors.blue,
-          child: Padding(
-            padding: const EdgeInsets.only(
-              top: 25,
-            ),
+          // child: Padding(
+          //   padding: const EdgeInsets.only(
+          //     top: 25,
+          //   ),
             child: Row(
               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -54,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                       width: _screen.width / 2,
                       // height: _screen.height/2,
                       child: Container(
-                        margin: const EdgeInsets.only(left: 25),
+                        // margin: const EdgeInsets.only(left: 25),
                         child: Column(
                           children: [
                             Row(
@@ -79,8 +82,8 @@ class _HomePageState extends State<HomePage> {
       
                                     // color: Colors.blue
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(top: 0),
+                                  // child: Padding(
+                                  //   padding: const EdgeInsets.only(top: 0),
                                     child: TextButton(
                                       onPressed: () {},
                                       child: Text(
@@ -93,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                   ),
-                                ),
+                                // ),
                                 Container(
                                   height: 40,
                                   width: _screen.width / 2.5,
@@ -103,8 +106,8 @@ class _HomePageState extends State<HomePage> {
                                           color: Colors.grey, width: 1.0),
                                     ),
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(left: 8.0),
+                                  // child: Padding(
+                                  //   padding: const EdgeInsets.only(left: 8.0),
                                     child: Row(
                                       children: [
                                         TextButton(
@@ -133,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                                       ],
                                     ),
                                   ),
-                                ),
+                                // ),
                               ],
                             ),
                             SizedBox(
@@ -152,35 +155,37 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
+                                        // Padding(
+                                        //   padding: const EdgeInsets.all(8.0),
+                                        //   child: 
+                                          Text(
                                             "Dosage Forms & Strengths\nMedium of Application",
                                             style: TextStyle(
                                                 fontSize: 11,
                                                 fontWeight: FontWeight.w600,
                                                 color: Colors.black54),
                                           ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                              left: 100, top: 8),
-                                          child: Text(
+                                        // ),
+                                        // Padding(
+                                        //   padding: const EdgeInsets.only(
+                                        //       left: 100, top: 8),
+                                          // child:
+                                           Text(
                                             "Info",
                                             style: TextStyle(
                                                 color: Colors.black54,
                                                 fontWeight: FontWeight.bold),
                                           ),
-                                        ),
+                                        // ),
                                       ],
                                     ),
                                     Row(
                                       children: [
                                         Container(
-                                            margin: EdgeInsets.only(
-                                                left: 10, top: 10),
-                                            padding:
-                                                EdgeInsets.only(left: 10, top: 5),
+                                            // margin: EdgeInsets.only(
+                                            //     left: 10, top: 10),
+                                            // padding:
+                                            //     EdgeInsets.only(left: 10, top: 5),
                                             height: 35,
                                             decoration: BoxDecoration(
                                               border: Border.all(
@@ -189,7 +194,7 @@ class _HomePageState extends State<HomePage> {
                                                   Radius.circular(5)),
                                               // color: Colors.amber
                                             ),
-                                            child: DropDownmenu()),
+                                            child: Example()),
                                         Container(
                                             margin: EdgeInsets.only(
                                                 left: 40, top: 10),
@@ -208,7 +213,7 @@ class _HomePageState extends State<HomePage> {
                                       children: [
                                         Container(
                                             width: 100,
-                                            margin: EdgeInsets.only(left: 10),
+                                            // margin: EdgeInsets.only(left: 10),
                                             decoration: BoxDecoration(
                                               border: Border.all(
                                                   color: Colors.black26),
@@ -224,7 +229,7 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                         Container(
                                             width: 100,
-                                            margin: EdgeInsets.only(left: 10),
+                                            // margin: EdgeInsets.only(left: 10),
                                             decoration: BoxDecoration(
                                               border: Border.all(
                                                   color: Colors.black26),
@@ -259,16 +264,17 @@ class _HomePageState extends State<HomePage> {
                                 child: Column(children: [
                                   Row(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
+                                      // Padding(
+                                      //   padding: const EdgeInsets.all(8.0),
+                                        // child: 
+                                        Text(
                                           "Indication",
                                           style: TextStyle(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w600,
                                               color: Colors.black54),
                                         ),
-                                      ),
+                                      // ),
                                       SizedBox(
                                         width: _screen.width / 2.8,
                                       ),
@@ -283,9 +289,9 @@ class _HomePageState extends State<HomePage> {
                                   Row(
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.only(
-                                          left: 10,
-                                        ),
+                                        // margin: EdgeInsets.only(
+                                        //   left: 10,
+                                        // ),
                                         // padding: EdgeInsets.only(top: 10),
                                         width: _screen.width / 2.14,
                                         height: 35,
@@ -297,24 +303,25 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Row(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
+                                      // Padding(
+                                      //   padding: const EdgeInsets.all(8.0),
+                                      //   child:
+                                         Text(
                                           "Info",
                                           style: TextStyle(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w600,
                                               color: Colors.black54),
                                         ),
-                                      ),
+                                      // ),
                                     ],
                                   ),
                                   Row(
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.only(
-                                          left: 10,
-                                        ),
+                                        // margin: EdgeInsets.only(
+                                        //   left: 10,
+                                        // ),
                                         // padding: EdgeInsets.only(top: 10),
                                         width: _screen.width / 2.14,
                                         height: 35,
@@ -332,7 +339,7 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Container(
                                           width: 100,
-                                          margin: EdgeInsets.only(left: 10),
+                                          // margin: EdgeInsets.only(left: 10),
                                           decoration: BoxDecoration(
                                             border:
                                                 Border.all(color: Colors.black26),
@@ -350,16 +357,17 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Row(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(left: 8),
-                                        child: Text(
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(left: 8),
+                                        // child: 
+                                        Text(
                                           "Dosage table",
                                           style: TextStyle(
                                               fontSize: 11,
                                               // fontWeight: FontWeight.w600,
                                               color: Colors.black54),
                                         ),
-                                      ),
+                                      // ),
                                       SizedBox(
                                         width: _screen.width / 2.87,
                                       ),
@@ -373,37 +381,39 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Row(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 8.0,
-                                        ),
-                                        child: Text(
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(
+                                      //     left: 8.0,
+                                      //   ),
+                                      //   child:
+                                         Text(
                                           "Medium of Application",
                                           style: TextStyle(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w600,
                                               color: Colors.black54),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            left: 130, top: 8),
-                                        child: Text(
+                                      // ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(
+                                      //       left: 130, top: 8),
+                                        // child: 
+                                        Text(
                                           "Info",
                                           style: TextStyle(
                                               color: Colors.black54,
                                               fontWeight: FontWeight.bold),
                                         ),
-                                      ),
+                                      // ),
                                     ],
                                   ),
                                   Row(
                                     children: [
                                       Container(
-                                          margin:
-                                              EdgeInsets.only(left: 10, top: 3),
-                                          padding:
-                                              EdgeInsets.only(left: 10, top: 5),
+                                          // margin:
+                                          //     EdgeInsets.only(left: 10, top: 3),
+                                          // padding:
+                                          //     EdgeInsets.only(left: 10, top: 5),
                                           height: 35,
                                           decoration: BoxDecoration(
                                             border:
@@ -412,10 +422,13 @@ class _HomePageState extends State<HomePage> {
                                                 Radius.circular(5)),
                                             // color: Colors.amber
                                           ),
-                                          child: DropDownmenu()),
+                                          child: Example(
+                                            
+
+                                          )),
                                       Container(
-                                          margin:
-                                              EdgeInsets.only(left: 40, top: 3),
+                                          // margin:
+                                          //     EdgeInsets.only(left: 40, top: 3),
                                           // padding: EdgeInsets.only(top: 30),
                                           width: _screen.width / 3,
                                           height: 35,
@@ -431,7 +444,7 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Container(
                                           width: 100,
-                                          margin: EdgeInsets.only(left: 10),
+                                          // margin: EdgeInsets.only(left: 10),
                                           decoration: BoxDecoration(
                                             border:
                                                 Border.all(color: Colors.black26),
@@ -480,20 +493,22 @@ class _HomePageState extends State<HomePage> {
                                       BorderRadius.all(Radius.circular(5))),
                               child: Column(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 8),
-                                    child: Row(
+                                  // Padding(
+                                  //   padding: const EdgeInsets.only(top: 8),
+                                  //   child:
+                                     Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.only(left: 8),
-                                          child: Text(
+                                        // Padding(
+                                        //   padding: const EdgeInsets.only(left: 8),
+                                        //   child: 
+                                          Text(
                                             "Other Dosage Info",
                                             style: TextStyle(
                                                 fontSize: 11,
                                                 // fontWeight: FontWeight.w600,
                                                 color: Colors.black54),
                                           ),
-                                        ),
+                                        // ),
                                         SizedBox(
                                           width: _screen.width / 3,
                                         ),
@@ -505,13 +520,13 @@ class _HomePageState extends State<HomePage> {
                                         )
                                       ],
                                     ),
-                                  ),
+                                  // ),
                                   Row(
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.only(
-                                          left: 10,
-                                        ),
+                                        // margin: EdgeInsets.only(
+                                        //   left: 10,
+                                        // ),
                                         // padding: EdgeInsets.only(top: 10),
                                         width: _screen.width / 2.14,
                                         height: 35,
@@ -526,8 +541,8 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Container(
                                           width: 100,
-                                          margin:
-                                              EdgeInsets.only(left: 10, top: 10),
+                                          // margin:
+                                          //     EdgeInsets.only(left: 10, top: 10),
                                           decoration: BoxDecoration(
                                             border:
                                                 Border.all(color: Colors.black26),
@@ -539,9 +554,9 @@ class _HomePageState extends State<HomePage> {
                                             buttontext: "Add More",
                                           )),
                                       Container(
-                                          // width: 180,
-                                          margin:
-                                              EdgeInsets.only(left: 10, top: 10),
+                                          // // width: 180,
+                                          // margin:
+                                          //     EdgeInsets.only(left: 10, top: 10),
                                           decoration: BoxDecoration(
                                             border:
                                                 Border.all(color: Colors.black26),
@@ -567,9 +582,11 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(height: 10,),
                     SizedBox(
                       child: Container(
-                        child: Padding(
-                          padding: const EdgeInsets.only(left:30.0,bottom: 10),
-                          child: Row(
+                        child:
+                        //  Padding(
+                        //   padding: const EdgeInsets.only(left:30.0,bottom: 10),
+                        //   child:
+                           Row(
                             children: [
                               Container(
                                 // width: 100,
@@ -610,7 +627,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         
                       ),
-                    )
+                    // )
                  
                   ],
                 ),
@@ -629,7 +646,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }
